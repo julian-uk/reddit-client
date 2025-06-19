@@ -71,9 +71,15 @@
   
   .comment-list li {
     margin-bottom: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding: 0.75rem;
     border-bottom: 1px solid #eee;
     line-height: 1.5;
+    background-color: #f9f9f9;
+  }
+  
+  /* Alternate row color */
+  .comment-list li:nth-child(even) {
+    background-color: #f1f1f1;
   }
   
   .comment-list strong {

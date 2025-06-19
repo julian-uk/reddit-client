@@ -8,12 +8,13 @@
   }
   
   .post-card {
-    flex: 1 1 300px;         /* Grow/shrink, base width */
+    flex: 1 1 300px;
     max-width: 320px;
     box-sizing: border-box;
   
-    background: white;
-    border: 1px solid #ddd;
+    background: #ffe6a6;
+    color: #222;
+    border: 1px solid #ff6f00;
     padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -22,6 +23,11 @@
     flex-direction: column;
     overflow: hidden;
     word-break: break-word;
+    transition: transform 0.2s ease;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-4px);
   }
   
   .post-card h3 {
@@ -41,7 +47,7 @@
   }
   
   .meta {
-    color: #555;
+    color: #666;
     margin-top: 0.75rem;
     font-size: 0.9rem;
   }
