@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import CommentList from '../comments/CommentList';
+//import CommentList from '../comments/CommentList';
 import './PostDetails.css';
 
 function PostDetails({ post, onClose }) {
