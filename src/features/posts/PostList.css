@@ -1,0 +1,58 @@
+.post-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  .post-card {
+    flex: 1 1 300px;         /* Grow/shrink, base width */
+    max-width: 320px;
+    box-sizing: border-box;
+  
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    word-break: break-word;
+  }
+  
+  .post-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  .post-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    display: block;
+  }
+  
+  .meta {
+    color: #555;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .status {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .status.error {
+    color: red;
+  }
+  
